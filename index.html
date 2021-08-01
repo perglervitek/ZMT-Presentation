@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZMT - Przentace projektu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container" id="begin">
+        <article class="header-content">
+          <div class="text-center">
+            <h1>Den autobusu</h1>
+            <p>Přemek Bělka, Vít Pergler</p>
+            <div class="start">
+              <a href="#uvod" id="begin-btn">Začít</a>
+            </div>
+          </div>
+        </article>
+        <aside class="image" id="header-img"></aside>
+      </section>
+
+      <!-- <section class="container" id="scenar">
+        <article class="content">
+          <a class="navigation-up long-nav-up" href="#video"></a>
+            <h1>Scénář projektu - 4 části</h1>
+              <ul>
+                <li>Úvodní scéna</li>
+                <ul>
+                  <li>Spící autobus, zazvoní budík, probuzení</li>
+                </ul>
+                <li>Autobus přijede na zastávku a nabere lidi</li>
+                <li>Cesta autobusem skrz některé zastávky</li>
+                <li>Zaparkování autobusu – zívnutí a spánek / chrápání</li>
+              </ul>          
+          </div>
+          <a href="#uvod" class="navigation-down long-nav-down"></a>
+        </article>
+        <aside class="image" id="scenar-img"></aside>
+      </section> -->
+
+      <section class="container" id="uvod">
+        <article class="content">
+          <a class="navigation-up" href="#begin"></a>
+          <div>
+            <h1>Úvodní scéna</h1>
+            <ul>
+              <li>Statický obrázek zaparkovaného autobusu</li>
+              <ul>
+                <li>Zvukový efekt chrápání a budíku</li>
+                <li>Změna poměru stran obrázku</li>
+                <li>Úpravy barev, jasu, kontrastu</li>
+              </ul>
+            </ul>
+          </div>
+          <a href="#prijezd" class="navigation-down"></a>
+        </article>
+        <aside class="image" id="uvod-img"></aside>
+      </section>
+
+      <section class="container" id="prijezd">
+        <article class="content">
+          <a class="navigation-up" href="#uvod"></a>
+          <div>
+            <h1>Příjezd na zastávku</h1>
+            <ul>
+              <li>1. vstupní videosekvence</li>
+              <ul>
+                <li>Změna rozlišení na Full HD FFMPEG</li>
+                <li>Střih</li>
+                <li>Úprava jasu, barev, kontrastu</li>
+                <li>Ke konci zvuk překrývá zvukový efekt jízdy autobusu, <br> upravení hlasitosti v Audacity.</li>
+              </ul>
+            </ul>
+          </div>
+          <a href="#prujezd" class="navigation-down"></a>
+        </article>
+        <aside class="image" id="prijezd-img"></aside>
+      </section>
+
+      <section class="container" id="prujezd">
+        <article class="content">
+          <a class="navigation-up" href="#prijezd"></a>
+          <div>
+            <h1>Průjezd zastávkami</h1>
+            <ul>
+              <li>Autobus projíždí zastávkami</li>
+              <ul>
+                <li>Střídají se statické obrázky zastávek jako pozadí</li>
+                <li>Bylo potřeba sjednotit jejich poměr stran na 16:9, <br> abychom se vyhli černým pruhům</li>
+              </ul>
+              <li>Animace autobusu</li>
+              <ul>
+                <li>Transformace objektu</li>
+                <li>Obrázek ve formátu PNG, přidán alpha kanál</li>
+              </ul>
+              <li>Zvuk z kabiny autobusu</li>
+            </ul>
+          </div>
+          <a href="#spanek" class="navigation-down"></a>
+        </article>
+        <aside class="image" id="prujezd-img"></aside>
+      </section>
+
+      <section class="container" id="spanek">
+        <article class="content">
+          <a class="navigation-up" href="#prujezd"></a>
+          <div>
+            <h1>Uspání autobusu</h1>
+            <ul>
+              <li>2. Vstupní videosekvence</li>
+              <ul>
+                <li>Přechod z obrázku - stmívačka</li>
+                <li>Zvukové efekty zívnutí a chrápání</li>
+                <li>Objevení titulků</li>
+              </ul>
+            </ul>
+          </div>
+          <a href="#prace-video" class="navigation-down"></a>
+        </article>
+        <aside class="image" id="uspani-img"></aside>
+      </section>
+
+      <section class="container" id="prace-video">
+        <article class="content">
+          <a class="navigation-up long-nav-up" href="#spanek"></a>
+          <div>
+            <h1>Práce s videem</h1>
+            <ul>
+              <li>Openshot, FFMPEG</li>
+              <li>Změna snímkové frekvence 60 => 30 fps</li>
+              <li>Změna rozližení z 4K => FULL HD</li>
+              <li>Animace (transformace) objektu</li>
+              <li>Střih vstupních videí</li>
+              <li>Přechody - střih a stmívačka</li>
+            </ul>
+          </div>
+          <a href="#prace-zvuk" class="navigation-down long-nav-down"></a>
+        </article>
+        <aside class="image" id="video-img"></aside>
+      </section>
+
+      <section class="container" id="prace-zvuk">
+        <article class="content">
+          <a class="navigation-up long-nav-up" href="#prace-video"></a>
+          <div>
+            <h1>Práce se zvukem</h1>
+            <ul>
+              <li>Audacity</li>
+              <li>Zvuk z kabiny autobusu</li>
+              <li>Úprava délky - selection</li>
+              <li>Úprava hlasitosti - amplify</li>
+              <li>Úprava šumu - noise reduction</li>
+              <li>Vyvážení hlasitosti</li>
+            </ul>
+          </div>
+          <a href="#prace-obraz" class="navigation-down long-nav-down"></a>
+        </article>
+        <aside class="image" id="zvuk-img"></aside>></aside>
+      </section>
+
+      <section class="container" id="prace-obraz">
+        <article class="content">
+          <a class="navigation-up" href="#prace-zvuk"></a>
+          <div>
+            <h1>Práce s obrázky</h1>
+            <ul>
+              <li>GIMP</li>
+              <li>7 vstupních obrázků</li>
+              <li>Úprava poměru stran a rozlišení</li>
+              <li>Úprava barev, jasu, kontrastu</li>
+              <li>Úprava autobusu k animaci - alpha kanál</li>
+            </ul>
+          </div>
+          <a href="#video" class="navigation-down"></a>
+        </article>
+        <aside class="image" id="obraz-img"></aside>
+      </section>
+
+      <section class="container" id="video">
+        <a class="navigation-up" href="#prace-obraz" id="video-up"></a>
+        <iframe
+          width="1300"
+          height="700"
+          src="https://www.youtube.com/embed/81AJYgvwQ6o"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <a class="navigation-down" href="#konec" id="video-down"></a>
+      </section>
+
+      <section class="container" id="konec">
+        <article class="content">
+          <a class="navigation-up" href="#video"></a>
+          <div>
+          <h1 style="font-size:28px">Děkujeme za pozornost :)</h1>
+          </div>
+        </article>
+      </section>
+  </body>
+</html>
